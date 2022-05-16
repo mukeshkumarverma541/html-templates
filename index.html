@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Carpet</title>
+</head>
+
+<body>
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" class="img-fluid">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+        <div class="hamburger-toggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Multilevel</a>
+                            <ul class="dropdown-menu shadow">
+                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li class="dropstart">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu Left</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Submenu Right</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item" href=""> Second level 1</a></li>
+                                        <li><a class="dropdown-item" href=""> Second level 2</a></li>
+                                        <li><a class="dropdown-item" href=""> Second level 3</a></li>
+                                        <li class="dropend">
+                                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Let's go deeper!</a>
+                                            <ul class="dropdown-menu dropdown-submenu shadow">
+                                                <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                                <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                                <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                                <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                                <li class="dropend">
+                                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Still don't have enough? Go much deeper!</a>
+                                                    <ul class="dropdown-menu dropdown-submenu shadow">
+                                                        <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                                                        <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                                                        <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                                                        <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-mega position-static">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Megamenu</a>
+                            <div class="dropdown-menu shadow">
+                                <div class="mega-content px-4">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5>Pages</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item" href="#">Accomodations</a>
+                                                    <a class="list-group-item" href="#">Terms & Conditions</a>
+                                                    <a class="list-group-item" href="#">Privacy</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5>Card</h5>
+                                                <div class="card">
+                                                    <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                                                    <div class="card-body">
+                                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-3 py-4">
+                                                <h5>Lot of Pages</h5>
+                                                <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-3 py-4">
+                                                <h5>Damn, so many</h5>
+                                                <div class="list-group">
+                                                    <a class="list-group-item" href="#">Accomodations</a>
+                                                    <a class="list-group-item" href="#">Terms & Conditions</a>
+                                                    <a class="list-group-item" href="#">Privacy</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="slider" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-ride="carousel" data-pause="hover">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="background-image: url(assets/images/image-1.jpg)">
+                                <div class="carousel-caption container">
+                                    <h5>Visualize <br>Your Room Into<br>A Masterpiece !</h5>
+                                    <p>Great Product Quality with Outstanding Design.</p>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn btn-secondary">See All Products</a>
+                                        <a href="#" class="btn btn-primary white">Explore More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" style="background-image: url('https://t.commonsupport.xyz/carpet/images/main-slider/image-2.jpg')">
+                                <div class="carousel-caption  container">
+                                    <h5>Visualize <br>Your Room Into<br>A Masterpiece !</h5>
+                                    <p>Great Product Quality with Outstanding Design.</p>
+                                    <div class="btn-wrap">
+                                        <a href="" class="btn btn-secondary">See All Products</a>
+                                        <a href="" class="btn btn-primary white">Explore More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about sec-sep">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="content-wrap">
+                        <h6 class="heading-top">WELCOME TO OUR</h6>
+                        <h2 class="sec-heading">Flooring & Paving Services</h2>
+                        <div class="line left"></div>
+                        <h4>We also Specialize in servicing apartment owners and property management companies requiring replacement products for existing units.
+                        </h4>
+                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative startegy foster proposition.</p>
+                        <a href="#" class="btn btn-primary mt-4">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="row gx-5">
+                        <div class="col">
+                            <img src="http://t.commonsupport.xyz/carpet/images/resource/service-1.jpg" class="img-fluid mb-4">
+                            <img src="http://t.commonsupport.xyz/carpet/images/resource/service-2.jpg" class="img-fluid">
+                        </div>
+                        <div class="col full-image">
+                            <img src="https://images.pexels.com/photos/7031723/pexels-photo-7031723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-services sec-sep">
+        <div class="container">
+            <div class="row top-heading text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="col">
+                    <h2 class="sec-heading">Our Services</h2>
+                    <div class="line"></div>
+                    <p>Our ranges are available in a wealth of sizes and styles, to ensure seamless co-ordination services</p>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="card">
+                        <img src="http://t.commonsupport.xyz/carpet/images/resource/service-4.jpg" class="img-fluid">
+                        <div class="title">
+                            <h3><a href="#">Laminate Board</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="card">
+                        <img src="http://t.commonsupport.xyz/carpet/images/resource/service-5.jpg" class="img-fluid">
+                        <div class="title">
+                            <h3><a href="#">Hardwood</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                    <div class="card">
+                        <img src="http://t.commonsupport.xyz/carpet/images/resource/service-6.jpg" class="img-fluid">
+                        <div class="title">
+                            <h3><a href="#">Carpet Flooring</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
+                    <div class="card">
+                        <img src="http://t.commonsupport.xyz/carpet/images/resource/service-7.jpg" class="img-fluid">
+                        <div class="title">
+                            <h3><a href="#">Vinley Tiles</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                    <div class="card">
+                        <img src="http://t.commonsupport.xyz/carpet/images/resource/service-8.jpg" class="img-fluid">
+                        <div class="title">
+                            <h3><a href="#">Vinley Sheet</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1800">
+                    <div class="card">
+                        <img src="http://t.commonsupport.xyz/carpet/images/resource/service-9.jpg" class="img-fluid">
+                        <div class="title">
+                            <h3><a href="#">Marbel Tiles</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="col">
+                    <a href="#" class="btn btn-primary">Show More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial" style="background-image: url('assets/images/testimonial.jpg')" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Swiper -->
+                    <div class="swiper testimononialSwiper" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="wrap">
+                                    <div class="icon">
+                                        <img src="assets/images/straight-quotes.png" class="img-fluid">
+                                    </div>
+                                    <p>We would like to thank Cleanmate company for an outstanding effort on this recently completed project located in the Moscow. The project involved a very aggressive schedule and it was completed on time.</p>
+                                    <div class="name">
+                                        MARK, SOUTH EVERETT
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrap">
+                                    <div class="icon">
+                                        <img src="assets/images/straight-quotes.png" class="img-fluid">
+                                    </div>
+                                    <p>We would like to thank Cleanmate company for an outstanding effort on this recently completed project located in the Moscow. The project involved a very aggressive schedule and it was completed on time.</p>
+                                    <div class="name">
+                                        MARK, SOUTH EVERETT
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrap">
+                                    <div class="icon">
+                                        <img src="assets/images/straight-quotes.png" class="img-fluid">
+                                    </div>
+                                    <p>We would like to thank Cleanmate company for an outstanding effort on this recently completed project located in the Moscow. The project involved a very aggressive schedule and it was completed on time.</p>
+                                    <div class="name">
+                                        MARK, SOUTH EVERETT
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrap">
+                                    <div class="icon">
+                                        <img src="assets/images/straight-quotes.png" class="img-fluid">
+                                    </div>
+                                    <p>We would like to thank Cleanmate company for an outstanding effort on this recently completed project located in the Moscow. The project involved a very aggressive schedule and it was completed on time.</p>
+                                    <div class="name">
+                                        MARK, SOUTH EVERETT
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="wrap">
+                                    <div class="icon">
+                                        <img src="assets/images/straight-quotes.png" class="img-fluid">
+                                    </div>
+                                    <p>We would like to thank Cleanmate company for an outstanding effort on this recently completed project located in the Moscow. The project involved a very aggressive schedule and it was completed on time.</p>
+                                    <div class="name">
+                                        MARK, SOUTH EVERETT
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next">
+                            <div class="arrow-icon">
+                                <img src="assets/images/right-arrow.png">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <div class="arrow-icon">
+                                <img src="assets/images/right-arrow.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-projects sec-sep" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="container-fluid p-0">
+            <div class="row container mx-auto top-heading">
+                <div class="col">
+                    <h2 class="sec-heading">Recent Projects</h2>
+                </div>
+                <div class="col text-right">
+                    <a href="#" class="btn btn-primary">View All</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="http://t.commonsupport.xyz/carpet/images/gallery/2.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <div class="category">
+                                            Floor
+                                        </div>
+                                        <h3>Fully Wooden Floor with Big Balcony</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="http://t.commonsupport.xyz/carpet/images/gallery/3.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <div class="category">
+                                            Floor
+                                        </div>
+                                        <h3>Fully Wooden Floor with Big Balcony</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="http://t.commonsupport.xyz/carpet/images/gallery/4.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <div class="category">
+                                            Floor
+                                        </div>
+                                        <h3>Fully Wooden Floor with Big Balcony</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="http://t.commonsupport.xyz/carpet/images/gallery/1.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <div class="category">
+                                            Floor
+                                        </div>
+                                        <h3>Fully Wooden Floor with Big Balcony</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="http://t.commonsupport.xyz/carpet/images/gallery/2.jpg" class="img-fluid">
+                                    <div class="content">
+                                        <div class="category">
+                                            Floor
+                                        </div>
+                                        <h3>Fully Wooden Floor with Big Balcony</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="wrap">
+                        <div>
+                            <p>
+                                Have Any Project for Us? Call Now Or Send A Message
+                            </p>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-primary white">Send Message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs sec-sep">
+        <div class="container">
+            <div class="row top-heading text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="col">
+                    <h2 class="sec-heading">From the Blog</h2>
+                    <div class="line"></div>
+                    <p>Our ranges are available in a wealth of sizes and styles, to ensure seamless co-ordination services</p>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="card">
+                        <div class="image">
+                            <img src="http://t.commonsupport.xyz/carpet/images/resource/news-1.jpg" class="img-fluid">
+                            <div class="date">14 May, 2022</div>
+                        </div>
+                        <div class="content">
+                            <h3 class="title">
+                                Modern House with Marbel.
+                            </h3>
+                            <div class="author">
+                                Posted by <a href="#">Admin</a>
+                            </div>
+                            <div class="post-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipi elit sed do eiusmod tempor incididunt...
+                            </div>
+                            <a href="#" class="btn read-more">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="card">
+                        <div class="image">
+                            <img src="http://t.commonsupport.xyz/carpet/images/resource/news-2.jpg" class="img-fluid">
+                            <div class="date">14 May, 2022</div>
+                        </div>
+                        <div class="content">
+
+                            <h3 class="title">
+                                Modern House with Marbel.
+                            </h3>
+                            <div class="author">
+                                Posted by <a href="#">Admin</a>
+                            </div>
+                            <div class="post-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipi elit sed do eiusmod tempor incididunt...
+                            </div>
+                            <a href="#" class="btn read-more">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                    <div class="card">
+                        <div class="image">
+                            <img src="http://t.commonsupport.xyz/carpet/images/resource/news-3.jpg" class="img-fluid">
+                            <div class="date">14 May, 2022</div>
+                        </div>
+
+                        <div class="content">
+                            <h3 class="title">
+                                Modern House with Marbel.
+                            </h3>
+                            <div class="author">
+                                Posted by <a href="#">Admin</a>
+                            </div>
+                            <div class="post-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipi elit sed do eiusmod tempor incididunt...
+                            </div>
+                            <a href="#" class="btn read-more">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-partners sec-sep" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="swiper partnersSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="assets/images/1.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="assets/images/2.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="assets/images/3.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="assets/images/4.png" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="assets/images/1.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="quick-contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="wrap">
+                        <div class="left">
+                            <img src="assets/images/telephone.png" class="img-fluid">
+                        </div>
+                        <div class="right">
+                            <h4 class="title">
+                                CALL US TODAY
+                            </h4>
+                            <p>
+                                <a href="">250 725 7052</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="wrap">
+                        <div class="left">
+                            <img src="assets/images/map.png" class="img-fluid">
+                        </div>
+                        <div class="right">
+                            <h4 class="title">
+                                OTTAWA, ONTARIO
+                            </h4>
+                            <p>745 Adelaide St.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="wrap">
+                        <div class="left">
+                            <img src="assets/images/wallet.png" class="img-fluid">
+                        </div>
+                        <div class="right">
+                            <h4 class="title">
+                                ESTIMATE YOUR COSTS
+                            </h4>
+                            <p>
+                                <a href="">Online Calculator</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="widget">
+                        <img src="assets/images/logo.png" class="img-fluid">
+                        <p>Floor & Decor is a leading specialty retailer in the hard surface flooring market, offering the broadest in-stock selection of tile,and flooring.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="widget">
+                        <h3 class="title">
+                            Legal
+                        </h3>
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Manufacturers</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="widget">
+                        <h3 class="title">
+                            INFORMATION
+                        </h3>
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Manufacturers</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookies</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="widget address">
+                        <h3 class="title">
+                            OUR ADDRESS
+                        </h3>
+                        <p><strong>Phone: </strong> +880 1723801729</p>
+                        <p><strong>Fax: </strong> +1 496 457 654</p>
+                        <p><strong>Email: </strong> <a href="mailto:example@gmail.com"> example@gmail.com</a></p>
+                        <p><strong>Address: </strong> Uttara Sec-7, Dhaka 1207</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center copyright">
+                <div class="col">
+                    © Copyright 2020 | All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        AOS.init({
+            disable: 'mobile'
+        });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                767: {
+                    slidesPerView: 2,
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                }
+            }
+        });
+
+        var swiper = new Swiper(".partnersSwiper", {
+            slidesPerView: 5,
+            spaceBetween: 40,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                580: {
+                    slidesPerView: 2,
+                },
+                767: {
+                    slidesPerView: 3,
+                },
+                991: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 5,
+                }
+            }
+        });
+
+        var swiper = new Swiper(".testimononialSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
