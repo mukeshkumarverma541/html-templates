@@ -324,6 +324,7 @@ header .navbar-nav .nav-item .nav-link {
   font-size: 3.2rem;
   margin: 0;
   font-weight: 500;
+  line-height: 4rem;
 }
 
 .cta .wrap {
@@ -340,6 +341,7 @@ header .navbar-nav .nav-item .nav-link {
 
 .blogs .card {
   border: 0;
+  margin-bottom: 3rem;
 }
 
 .blogs .card .image {
@@ -439,6 +441,7 @@ header .navbar-nav .nav-item .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1rem auto;
 }
 
 .quick-contact .wrap .title {
@@ -560,6 +563,10 @@ footer img {
 
 footer p {
   color: #a5a5a5;
+}
+
+footer .widget {
+  margin-bottom: 3rem;
 }
 
 footer .menu {
@@ -746,6 +753,14 @@ footer .copyright {
   }
   .slider .carousel-control-next,
   .slider .carousel-control-prev {
+    display: none;
+  }
+  .sec-sep {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none;
   }
 }
