@@ -291,6 +291,7 @@ header {
         font-size: 3.2rem;
         margin: 0;
         font-weight: 500;
+        line-height: 4rem;
     }
     .wrap {
         display: flex;
@@ -302,6 +303,7 @@ header {
 .blogs {
     .card {
         border: 0;
+        margin-bottom: 3rem;
         .image {
             position: relative;
             .date {
@@ -379,6 +381,7 @@ header {
     .wrap {
         display: flex;
         align-items: center;
+        margin: 1rem auto;
         .title {
             display: block;
             color: #80888A;
@@ -483,6 +486,9 @@ footer {
     }
     p {
         color: #a5a5a5;
+    }
+    .widget {
+        margin-bottom: 3rem;
     }
     .menu {
         margin: 0;
@@ -637,6 +643,14 @@ footer {
     }
     .slider .carousel-control-next,
     .slider .carousel-control-prev {
+        display: none;
+    }
+    .sec-sep {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
     }
 }
