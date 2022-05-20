@@ -7,16 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <title>Carpet</title>
+    <title>Home- Carpet</title>
 </head>
 
 <body>
+    <section class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="wrap">
+                        <div class="me-5">
+                            <a href="tel:"> <i class="fa-solid fa-phone"></i> 033-443-3441</a>
+                        </div>
+                        <div>
+                            <a href="mailto:"><i class="fa-solid fa-envelope"></i> example@gmail.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <header data-aos="fade-down" data-aos-duration="1000">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo.png" class="img-fluid">
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
@@ -31,104 +49,75 @@
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Services</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Multilevel</a>
-                            <ul class="dropdown-menu shadow">
-                                <li><a class="dropdown-item" href="#">Gallery</a></li>
-                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                <li class="dropstart">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu Left</a>
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                        <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                        <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                        <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="about.html">Why choose </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">Our Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="service-single.html">Carpet and Carpet Tiles</a></li>
+                                <li><a class="dropdown-item" href="service-single.html">Timber Flooring  </a></li>
+                                <li><a class="dropdown-item" href="service-single.html">Laminate Flooring   </a></li>
+                                <li><a class="dropdown-item" href="service-single.html">Hybrid Flooring</a></li>
+                                <li><a class="dropdown-item" href="service-single.html">Bamboo Flooring</a></li>
+                                <li><a class="dropdown-item" href="service-single.html">Commercial and Domestic Vinyl</a></li>
+
+                                <li class="dropend">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Installation</a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href=""> Carpet Supply and Installation</a></li>
+                                        <li><a class="dropdown-item" href="">Flooring Supply and Installation</a></li>
+
+
                                     </ul>
                                 </li>
-                                <li class="dropend">
-                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Submenu Right</a>
-                                    <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href=""> Second level 1</a></li>
-                                        <li><a class="dropdown-item" href=""> Second level 2</a></li>
-                                        <li><a class="dropdown-item" href=""> Second level 3</a></li>
-                                        <li class="dropend">
-                                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Let's go deeper!</a>
-                                            <ul class="dropdown-menu dropdown-submenu shadow">
-                                                <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                                <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                                <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                                <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                                <li class="dropend">
-                                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Still don't have enough? Go much deeper!</a>
-                                                    <ul class="dropdown-menu dropdown-submenu shadow">
-                                                        <li><a class="dropdown-item" href=""> Third level 1</a></li>
-                                                        <li><a class="dropdown-item" href=""> Third level 2</a></li>
-                                                        <li><a class="dropdown-item" href=""> Third level 3</a></li>
-                                                        <li><a class="dropdown-item" href=""> Third level 4</a></li>
-                                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+                            <ul class="dropdown-menu ">
+                                <li class="dropstart">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Flooring</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="product-single.html">Hybrid Flooring</a></li>
+                                        <li><a class="dropdown-item" href="product-single.html">Laminate Flooring</a></li>
+                                        <li><a class="dropdown-item" href="product-single.html">Timber Flooring</a></li>
+                                        <li><a class="dropdown-item" href="product-single.html">Vinyl Flooring</a></li>
+                                        <li><a class="dropdown-item" href="product-single.html">Waterproof Flooring Range</a></li>
+                                        <li><a class="dropdown-item" href="product-single.html">Bamboo Flooring</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropstart">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Carpet</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="product-single.html">Wool Carpet</a></li>
+                                        <li><a class="dropdown-item" href="product-single.html">Synthetic Carpet</a></li>
+
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown dropdown-mega position-static">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Megamenu</a>
-                            <div class="dropdown-menu shadow">
-                                <div class="mega-content px-4">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-4 col-md-3 py-4">
-                                                <h5>Pages</h5>
-                                                <div class="list-group">
-                                                    <a class="list-group-item" href="#">Accomodations</a>
-                                                    <a class="list-group-item" href="#">Terms & Conditions</a>
-                                                    <a class="list-group-item" href="#">Privacy</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-4 col-md-3 py-4">
-                                                <h5>Card</h5>
-                                                <div class="card">
-                                                    <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
-                                                    <div class="card-body">
-                                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-sm-4 col-md-3 py-4">
-                                                <h5>Lot of Pages</h5>
-                                                <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-3 py-4">
-                                                <h5>Damn, so many</h5>
-                                                <div class="list-group">
-                                                    <a class="list-group-item" href="#">Accomodations</a>
-                                                    <a class="list-group-item" href="#">Terms & Conditions</a>
-                                                    <a class="list-group-item" href="#">Privacy</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="nav-link" aria-current="page" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+                            <a class="nav-link" aria-current="page" href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="faqs.html">FAQ's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="free-measure-quote.html">Quotes</a>
                         </li>
 
                     </ul>
@@ -144,7 +133,7 @@
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-ride="carousel" data-pause="hover">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#dcarouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" style="background-image: url(assets/images/image-1.jpg)">
@@ -361,7 +350,7 @@
         </div>
     </section>
 
-    <section class="recent-projects sec-sep" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+    <section class="recent-projects sec-sep pb-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="container-fluid p-0">
             <div class="row container mx-auto top-heading">
                 <div class="col">
