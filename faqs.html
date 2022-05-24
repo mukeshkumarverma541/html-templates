@@ -14,7 +14,24 @@
 </head>
 
 <body>
-    <header data-aos="fade-down" data-aos-duration="1000">
+    <section class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="wrap">
+                        <div class="me-5">
+                            <a href="tel:"> <i class="fa-solid fa-phone"></i> 033-443-3441</a>
+                        </div>
+                        <div>
+                            <a href="mailto:"><i class="fa-solid fa-envelope"></i> example@gmail.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -35,14 +52,14 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">About Us</a>
+                            <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">About Us</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
                                 <li><a class="dropdown-item" href="about.html">Why choose </a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">Our Services</a>
+                            <a class="nav-link dropdown-toggle" href="our-services.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Our Services</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="service-single.html">Carpet and Carpet Tiles</a></li>
                                 <li><a class="dropdown-item" href="service-single.html">Timber Flooring  </a></li>
@@ -64,7 +81,7 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+                            <a class="nav-link dropdown-toggle" href="products.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
                             <ul class="dropdown-menu ">
                                 <li class="dropstart">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Flooring</a>
@@ -88,23 +105,21 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="projects.html">Projects</a>
+                            <a class="nav-link" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="blogs.html">Blogs</a>
+                            <a class="nav-link" href="blogs.html">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="faqs.html">FAQ's</a>
+                            <a class="nav-link" href="faqs.html">FAQ's</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="free-measure-quote.html">Quotes</a>
+                            <a class="nav-link" href="free-measure-quote.html">Quotes</a>
                         </li>
-
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -122,76 +137,111 @@
     <section class="sec-sep faqs">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
+                <div class="col-lg-10">
                     <div class="row">
                         <div class="col">
                             <h2 class="sec-heading">FAQs</h2>
                         </div>
                     </div>
                     <div class="row mt-5 gx-5">
-                        <div class="accordion" id="accordionFaqs">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading1">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="col-md-3">
+                            <div class="faq-categories">
+                                <h3 class="title">Services</h3>
+                                <ul>
+                                    <li><a href="#">Carpet and Carpet Tiles</a></li>
+                                    <li><a href="#">Timber Flooring  </a></li>
+                                    <li><a href="#">Laminate Flooring   </a></li>
+                                    <li><a href="#">Hybrid Flooring</a></li>
+                                    <li><a href="#">Bamboo Flooring</a></li>
+                                    <li><a href="#">Commercial and Domestic Vinyl</a></li>
+                                </ul>
+                                <h3 class="title">Products</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Flooring</a>
+                                        <ul>
+                                            <li><a href="#">Hybrid Flooring</a></li>
+                                            <li><a href="#">Laminate Flooring</a></li>
+                                            <li><a href="#">Timber Flooring</a></li>
+                                            <li><a href="#">Vinyl Flooring</a></li>
+                                            <li><a href="#">Waterproof Flooring Range</a></li>
+                                            <li><a href="#">Bamboo Flooring</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Carpet</a>
+                                        <ul>
+                                            <li><a href="#">Wool Carpet</a></li>
+                                            <li><a href="#">Synthetic Carpet</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="accordion" id="accordionFaqs">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Common PayPal and credit card issues
                                 </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionFaqs">
-                                    <div class="accordion-body">
-                                        <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionFaqs">
+                                        <div class="accordion-body">
+                                            <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Watch videos
                                 </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaqs">
-                                    <div class="accordion-body">
-                                        <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaqs">
+                                        <div class="accordion-body">
+                                            <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                         Monetise with the YouTube Partner Programme
                                 </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaqs">
-                                    <div class="accordion-body">
-                                        <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaqs">
+                                        <div class="accordion-body">
+                                            <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="heading4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                                         Policy, safety and copyright                                </button>
-                                </h2>
-                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionFaqs">
-                                    <div class="accordion-body">
-                                        <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionFaqs">
+                                        <div class="accordion-body">
+                                            <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                         Create and grow your channel
                                 </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaqs">
-                                    <div class="accordion-body">
-                                        <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaqs">
+                                        <div class="accordion-body">
+                                            <p>All transactions that occur on Envato Market will be in U.S. dollars. If your Paypal account or funding source is in a currency may incur a conversion fee.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

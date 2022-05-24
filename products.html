@@ -13,7 +13,24 @@
 </head>
 
 <body>
-    <header data-aos="fade-down" data-aos-duration="1000">
+    <section class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="wrap">
+                        <div class="me-5">
+                            <a href="tel:"> <i class="fa-solid fa-phone"></i> 033-443-3441</a>
+                        </div>
+                        <div>
+                            <a href="mailto:"><i class="fa-solid fa-envelope"></i> example@gmail.com</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -34,14 +51,14 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">About Us</a>
+                            <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">About Us</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="our-team.html">Our Team</a></li>
                                 <li><a class="dropdown-item" href="about.html">Why choose </a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">Our Services</a>
+                            <a class="nav-link dropdown-toggle" href="our-services.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Our Services</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="service-single.html">Carpet and Carpet Tiles</a></li>
                                 <li><a class="dropdown-item" href="service-single.html">Timber Flooring  </a></li>
@@ -63,7 +80,7 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+                            <a class="nav-link dropdown-toggle" href="products.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
                             <ul class="dropdown-menu ">
                                 <li class="dropstart">
                                     <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Flooring</a>
@@ -87,23 +104,21 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="projects.html">Projects</a>
+                            <a class="nav-link" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="blogs.html">Blogs</a>
+                            <a class="nav-link" href="blogs.html">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="faqs.html">FAQ's</a>
+                            <a class="nav-link" href="faqs.html">FAQ's</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="free-measure-quote.html">Quotes</a>
+                            <a class="nav-link" href="free-measure-quote.html">Quotes</a>
                         </li>
-
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -122,11 +137,20 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
-                    <div class="row text-center">
+                    <div class="row">
                         <div class="col">
-                            <h2 class="sec-heading">Our Products</h2>
+                            <h2 class="sec-heading text-center">Our Products</h2>
                             <div class="line"></div>
-                            <p class="subheading">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, atque ullam ratione cupiditate est officia deleniti sequi sed ut accusantium itaque, ipsa aliquam dolore incidunt corporis ducimus adipisci sint quibusdam.</p>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Time to update your flooring?</p>
+                                    <p>We have an extensive range of flooring solutions to suit your lifestyle, budget and home aesthetic.</p>
+                                    <p>To create a comfortable space, explore our range of synthetic, tile or wool carpet options.</p>
+                                    <p>
+                                        For low maintenance solutions, choose from our vinyl, laminate or hybrid flooring.</p>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -149,344 +173,354 @@
                         </div>
                         <div class="col-lg-9">
                             <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/4.jpg" class="img-fluid">
-                                                </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
 
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/1.jpg" class="img-fluid">
+                                <select class="form-control sorting">
+                                    <option value="date">Latest</option>
+                                    <option value="popularity">Popularity</option>
+                                    <option value="price">Price: Low to High</option>
+                                    <option value="price-desc">Price: High to Low</option>
+                                    <option value="title" selected="selected">Sort by name: A to Z</option>
+                                    <option value="title-desc">Sort by name: Z to A</option>
+                            </select>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/4.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/2.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/1.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/3.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/2.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/4.jpg" class="img-fluid">
-                                                </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/1.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/3.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/4.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/2.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/1.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/3.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/2.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/4.jpg" class="img-fluid">
-                                                </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/1.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/3.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/4.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/2.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/1.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/3.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/2.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/4.jpg" class="img-fluid">
-                                                </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/1.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/3.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
-
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/2.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/4.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/3.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/1.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/4.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/2.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/1.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/3.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
-
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/2.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/4.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="card">
-                                        <a href="product-single.html">
-                                            <div class="image">
-                                                <div class="front-img">
-                                                    <img src="assets/images/products/3.jpg" class="img-fluid">
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/1.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
                                                 </div>
-                                                <div class="back-img">
-                                                    <img src="assets/images/products/back-img.jpg" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <h3 class="title">Aegean Isle Chios
-                                            </h3>
-                                        </a>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
+
+                                        </div>
                                     </div>
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/2.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img-2.jpg" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <a href="product-single.html">
+                                                <div class="image">
+                                                    <div class="front-img">
+                                                        <img src="assets/images/products/3.jpg" class="img-fluid">
+                                                    </div>
+                                                    <div class="back-img">
+                                                        <img src="assets/images/products/back-img.jpg" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                                <h3 class="title">Aegean Isle Chios
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
                                 </div>
-
-
-
                             </div>
                         </div>
                     </div>

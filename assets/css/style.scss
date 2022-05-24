@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;700;800;900&display=swap');
  :root {
-    --primary-color: #d68112;
+    --primary-color: #d43d27;
 }
 
 html {
@@ -16,12 +16,12 @@ body {
 }
 
 .btn-primary {
-    background-color: transparent;
-    color: #000;
+    background-color: var(--primary-color);
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    border: 1px solid #000;
+    border: 1px solid var(--primary-color);
     border-radius: 0;
     padding: 9px 28px;
     margin-bottom: 1rem;
@@ -32,6 +32,11 @@ body {
     &.white {
         border-color: #fff;
         color: #fff;
+        background-color: transparent;
+        &:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
     }
 }
 
@@ -80,7 +85,7 @@ a {
 }
 
 .top-header {
-    background-color: #000;
+    background-color: var(--primary-color);
     padding: 1rem;
     .wrap {
         display: flex;
@@ -97,16 +102,22 @@ a {
 }
 
 header {
-    position: absolute;
-    z-index: 9;
-    width: 100%;
-    padding: 1rem 0;
+    // position: absolute;
+    // z-index: 9;
+    // width: 100%;
+    // padding: 1rem 0;
+    .navbar-brand {
+        img {
+            max-width: 21rem;
+        }
+    }
     .navbar-nav {
         margin-left: auto;
         margin-right: 0;
         .nav-item {
             .nav-link {
-                color: #fff;
+                color: #000;
+                font-weight: 500;
                 padding-left: 2rem;
                 padding-right: 2rem;
                 font-family: 'Barlow', sans-serif;
@@ -701,17 +712,17 @@ footer {
 
 .page-title {
     background-size: cover;
-    min-height: 400px;
+    min-height: 30rem;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     h2 {
-        font-size: 50px;
+        font-size: 5rem;
         font-weight: 700;
         color: #fff;
-        padding-top: 9rem;
         position: relative;
+        line-height: 7rem;
     }
 }
 
@@ -850,7 +861,7 @@ footer {
         margin-bottom: 4rem;
         .search {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             input {
                 height: 51px;
                 font-size: 14px;
@@ -1108,5 +1119,57 @@ select.form-control {
     .title {
         font-weight: 600;
         font-size: 18px;
+    }
+}
+
+.sorting {
+    max-width: 190px;
+    margin-left: auto;
+}
+
+.variants {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.faq-categories {
+    border: 1px solid #ddd;
+    .title {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 1rem;
+        font-weight: 300;
+    }
+    ul {
+        padding: 2rem;
+        list-style-type: none;
+        li {
+            color: #000;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            a {
+                color: inherit;
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+            ul {
+                list-style-type: initial;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
     }
 }
