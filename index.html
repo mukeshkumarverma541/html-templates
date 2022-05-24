@@ -199,7 +199,66 @@
         </div>
     </section>
 
-    <section class="our-services sec-sep">
+    <section class="our-products sec-sep bg">
+        <div class="container">
+            <div class="row top-heading text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="col">
+                    <h2 class="sec-heading">Shop From Our Store</h2>
+                    <div class="line"></div>
+                    <p>Our ranges are available in a wealth of sizes and styles, to ensure seamless co-ordination services</p>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col">
+                    <!-- Swiper -->
+                    <div class="swiper productsSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/products/p1.jpg" class="img-fluid">
+                                <a href="#">
+                                    <div class="name">ANASTASIA 250 PASTLE</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/products/p2.jpg" class="img-fluid">
+                                <a href="#">
+                                    <div class="name">ANASTASIA 250 PASTLE</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/products/p3.jpg" class="img-fluid">
+                                <a href="#">
+                                    <div class="name">ANASTASIA 250 PASTLE</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/products/p4.jpg" class="img-fluid">
+                                <a href="#">
+                                    <div class="name">ANASTASIA 250 PASTLE</div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/products/p1.jpg" class="img-fluid">
+                                <a href="#">
+                                    <div class="name">ANASTASIA 250 PASTLE</div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="col">
+                    <a href="products.html" class="btn btn-primary">Show More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="our-services sec-sep ">
         <div class="container">
             <div class="row top-heading text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="col">
@@ -261,7 +320,7 @@
             </div>
             <div class="row text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 <div class="col">
-                    <a href="#" class="btn btn-primary">Show More</a>
+                    <a href="our-services.html" class="btn btn-primary">Show More</a>
                 </div>
             </div>
         </div>
@@ -355,7 +414,7 @@
                     <h2 class="sec-heading">Recent Projects</h2>
                 </div>
                 <div class="col text-right">
-                    <a href="#" class="btn btn-primary">View All</a>
+                    <a href="projects.html" class="btn btn-primary">View All</a>
                 </div>
             </div>
             <div class="row">
@@ -777,6 +836,32 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+        });
+
+        var swiper = new Swiper(".productsSwiper", {
+            slidesPerView: 5,
+            spaceBetween: 40,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                580: {
+                    slidesPerView: 2,
+                },
+                767: {
+                    slidesPerView: 3,
+                },
+                991: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 5,
+                }
+            }
         });
     </script>
 </body>

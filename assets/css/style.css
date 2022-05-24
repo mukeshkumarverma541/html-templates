@@ -100,12 +100,12 @@ a {
 
 .top-header .wrap a {
   color: #fff;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 15px;
 }
 
 .top-header .wrap a:hover {
-  color: var(--primary-color);
+  color: #fff;
 }
 
 header .navbar-brand img {
@@ -1198,7 +1198,7 @@ select.form-control {
 }
 
 .bg {
-  background-color: #00000014;
+  background-color: #00000008;
 }
 
 .portfolio .filters ul {
@@ -1362,5 +1362,149 @@ select.form-control {
   list-style-type: initial;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.checks-in {
+  background-color: #f1f1f1;
+}
+
+.checks-in .header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+}
+
+.checks-in .header p {
+  margin: 0;
+}
+
+.checks-in i {
+  color: var(--primary-color);
+}
+
+.checks-in .inner {
+  padding: 2rem 1.5rem 1rem;
+}
+
+.checks-in .inner p {
+  min-height: 5.7rem;
+}
+
+.checks-in .btn {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: 13px;
+  padding: 0.7rem 1rem;
+}
+
+.checks-in .postal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checks-in .postal input {
+  max-width: 16rem;
+  height: 35px;
+}
+
+.checks-in .postal button {
+  padding: 6px;
+  height: 35px;
+  margin-left: 10px;
+}
+
+.checks-in .border-right {
+  border-right: 1px solid #d43d27;
+}
+
+.product.accordion .accordion-button {
+  font-size: 1.6rem;
+  padding: 1.4rem 2rem;
+}
+
+.product.accordion .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.product-slider .swiper-slide img {
+  max-height: 20rem;
+  margin-bottom: 2rem;
+}
+
+.product-slider h4 {
+  color: #000;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.0rem;
+}
+
+.filter {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 3rem;
+}
+
+.filter .title {
+  padding: 6px 9px;
+  background-color: #f3f5f6;
+  color: #585858;
+  font-size: 16px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.filter label {
+  font-size: 1.4rem;
+}
+
+.filter a {
+  color: #000;
+}
+
+.filter ul {
+  padding: 2rem;
+}
+
+.filter ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter.brands ul li {
+  position: relative;
+  color: #000;
+  padding-left: 1rem;
+}
+
+.filter.brands ul li a {
+  font-size: 1.4rem;
+}
+
+.filter.brands ul li::before {
+  content: '';
+  position: absolute;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/860/860828.png);
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  top: 8px;
+  left: -7px;
+}
+
+.our-products .swiper-slide a:hover .name {
+  color: var(--primary-color);
+}
+
+.our-products .swiper-slide .name {
+  color: #000;
+  padding-top: 10px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

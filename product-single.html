@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -164,10 +165,9 @@
 
     <section class="sec-sep products">
         <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-5">
                     <!-- Swiper -->
-
                     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -185,12 +185,11 @@
                             <div class="swiper-slide">
                                 <img src="assets/images/products/1.jpg" class="img-fluid" />
                             </div>
-
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <div thumbsSlider="" class="swiper mySwiper">
+                    <div thumbsSlider="" class="swiper mySwiper mt-3">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="assets/images/products/1.jpg" class="img-fluid" />
@@ -211,10 +210,10 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <h2 class="sec-heading">
+                    <h2 class="col-heading">
                         Aegean Isle Chios
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur neque. Veritatis, quam aliquam delectus assumenda nemo asperiores, ea porro repudiandae totam nesciunt sed id distinctio, eaque quibusdam exercitationem molestiae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aspernatur neque. </p>
                     <h3 class="mt-5">Details :</h3>
                     <table class="mb-5">
                         <tr>
@@ -272,19 +271,21 @@
                         </div>
                     </div>
 
-                    <div class="checks-in">
-                        <div class="row header">
+                    <div class="checks-in mt-4">
+                        <div class="row">
                             <div class="col">
-                                <p>For an accurate quote please contact your nearest store</p>
+                                <div class="header">
+                                    <p> For an accurate quote please contact your nearest store</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Get A Free In-Home Quote</p>
+                        <div class="row inner  gx-5">
+                            <div class="col-md-5 border-right">
+                                <p> <i class="fa-solid fa-pen-to-square"></i> Get A Free In-Home Quote</p>
                                 <a href="#" class="btn btn-primary">Book An Appointment</a>
                             </div>
-                            <div class="col-md-6">
-                                <p>Find Your Nearest Store</p>
+                            <div class="col-md-7">
+                                <p> <i class="fa-solid fa-location-dot"></i> Find Your Nearest Store</p>
                                 <div class="postal">
                                     <input type="text" class="form-control" placeholder="Enter a Postcode ">
                                     <button type="submit" class="btn btn-primary">Find Store</button>
@@ -295,47 +296,182 @@
 
                 </div>
             </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-10">
+                    <div class="accordion product" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Care Tips
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+                                    CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Product Brochure & Warranty Information
+
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+                                    CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Others
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+                                    CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         </div>
     </section>
 
     <section class="pro-gallery sec-sep bg">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="assets/images/products/s1.jpg" class="img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/images/products/s2.jpg" class="img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/images/products/s3.jpg" class="img-fluid">
-                </div>
-                <div class="col-lg-3">
-                    <img src="assets/images/products/s4.jpg" class="img-fluid">
+            <div class="row text-center">
+                <div class="col">
+                    <h3 class="col-heading">
+                        You May Also Like
+                    </h3>
                 </div>
             </div>
-        </div>
+            <div class="row mt-4">
+                <!-- Swiper -->
+                <div class="swiper mySwiper product-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/1.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/2.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/3.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/4.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/1.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/2.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/3.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
     </section>
 
-    <section class="sec-sep">
+    <section class="pro-gallery sec-sep ">
         <div class="container">
-            <div class="row gx-5">
-                <div class="col-md-6">
-                    <img src="assets/images/products/main.jpg" class="img-fluid">
+            <div class="row text-center">
+                <div class="col">
+                    <h3 class="col-heading">
+                        Recently Viewed
+                    </h3>
                 </div>
-                <div class="col-md-6">
-                    <h2 class="sec-heading">
-                        Our key principles
-                    </h2>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto illo sunt sint harum ea, cum fugit perspiciatis itaque nihil repellendus ut dolorum minus labore delectus obcaecati neque ratione iusto quaerat.</p>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto illo sunt sint harum ea, cum fugit perspiciatis itaque nihil repellendus ut dolorum minus labore delectus obcaecati neque ratione iusto quaerat.</p>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto illo sunt sint harum ea, cum fugit perspiciatis itaque nihil repellendus ut dolorum minus labore delectus obcaecati neque ratione iusto quaerat.</p>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto illo sunt sint harum ea, cum fugit perspiciatis itaque nihil repellendus ut dolorum minus labore delectus obcaecati neque ratione iusto quaerat.</p>
+            </div>
+            <div class="row mt-4">
+                <!-- Swiper -->
+                <div class="swiper mySwiper product-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/1.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/2.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/3.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/4.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/1.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/2.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="assets/images/products/3.jpg" class="img-fluid">
+                                <h4>Korlok Texas White Ash</h4>
+                            </a>
+                        </div>
+
+                    </div>
+
 
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="quick-contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
@@ -483,21 +619,12 @@
         AOS.init({
             disable: 'mobile'
         });
-
         var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            thumbs: {
-                swiper: swiper,
+            slidesPerView: 6,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
         });
     </script>

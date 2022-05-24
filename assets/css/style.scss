@@ -92,10 +92,10 @@ a {
         justify-content: end;
         a {
             color: #fff;
-            font-weight: 200;
+            font-weight: 300;
             font-size: 15px;
             &:hover {
-                color: var(--primary-color);
+                color: #fff;
             }
         }
     }
@@ -1035,7 +1035,7 @@ select.form-control {
 }
 
 .bg {
-    background-color: #00000014;
+    background-color: #00000008;
 }
 
 .portfolio {
@@ -1170,6 +1170,139 @@ select.form-control {
                 padding-top: 1rem;
                 padding-bottom: 1rem;
             }
+        }
+    }
+}
+
+.checks-in {
+    background-color: #f1f1f1;
+    .header {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 1rem;
+        p {
+            margin: 0;
+        }
+    }
+    i {
+        color: var(--primary-color);
+    }
+    .inner {
+        padding: 2rem 1.5rem 1rem;
+        p {
+            min-height: 5.7rem;
+        }
+    }
+    .btn {
+        background-color: transparent;
+        color: var(--primary-color);
+        font-size: 13px;
+        padding: 0.7rem 1rem;
+    }
+    .postal {
+        display: flex;
+        input {
+            max-width: 16rem;
+            height: 35px;
+        }
+        button {
+            padding: 6px;
+            height: 35px;
+            margin-left: 10px;
+        }
+    }
+    .border-right {
+        border-right: 1px solid #d43d27;
+    }
+}
+
+.product {
+    &.accordion {
+        .accordion-button {
+            font-size: 1.6rem;
+            padding: 1.4rem 2rem;
+        }
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: var(--primary-color);
+        }
+    }
+}
+
+.product-slider {
+    .swiper-slide {
+        img {
+            max-height: 20rem;
+            margin-bottom: 2rem;
+        }
+    }
+    h4 {
+        color: #000;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 2.0rem;
+    }
+}
+
+.filter {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 3rem;
+    .title {
+        padding: 6px 9px;
+        background-color: #f3f5f6;
+        color: #585858;
+        font-size: 16px;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    label {
+        font-size: 1.4rem;
+    }
+    a {
+        color: #000;
+    }
+    ul {
+        padding: 2rem;
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &.brands {
+        ul {
+            li {
+                position: relative;
+                color: #000;
+                padding-left: 1rem;
+                a {
+                    font-size: 1.4rem;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url(https://cdn-icons-png.flaticon.com/512/860/860828.png);
+                    background-size: contain;
+                    width: 10px;
+                    height: 10px;
+                    top: 8px;
+                    left: -7px;
+                }
+            }
+        }
+    }
+}
+
+.our-products {
+    .swiper-slide {
+        a:hover {
+            .name {
+                color: var(--primary-color);
+            }
+        }
+        .name {
+            color: #000;
+            padding-top: 10px;
+            text-align: center;
         }
     }
 }
