@@ -643,6 +643,10 @@ footer {
   padding-bottom: 2rem;
 }
 
+footer .logo {
+  max-width: 270px;
+}
+
 footer img {
   margin-bottom: 2rem;
 }
@@ -1168,7 +1172,7 @@ footer .copyright {
 
 .form-control {
   padding: 1.3rem;
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   margin-bottom: 2.5rem;
 }
 

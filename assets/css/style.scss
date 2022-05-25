@@ -562,6 +562,9 @@
         background-color: #343C3E;
         padding-top: 5rem;
         padding-bottom: 2rem;
+        .logo {
+            max-width: 270px;
+        }
         img {
             margin-bottom: 2rem;
         }
@@ -1004,7 +1007,7 @@
     
     .form-control {
         padding: 1.3rem;
-        font-size: 1.0rem;
+        font-size: 1.5rem;
         margin-bottom: 2.5rem;
     }
     
