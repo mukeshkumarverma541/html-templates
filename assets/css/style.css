@@ -48,6 +48,10 @@ a {
   text-decoration: none;
 }
 
+.container-fluid {
+  overflow-x: hidden;
+}
+
 .btn-secondary {
   font-size: 1.6rem;
   font-weight: 500;
@@ -886,8 +890,12 @@ footer .copyright {
 }
 
 .teams .card {
-  border: 0;
   margin-bottom: 5rem;
+  border: 1px solid #d3d3d3;
+}
+
+.teams .card .content {
+  padding: 0 2rem 1rem;
 }
 
 .teams .card .image {
@@ -1340,6 +1348,10 @@ select.form-control {
   font-size: 1.8rem;
 }
 
+.project-meta .widget {
+  margin-bottom: 1rem;
+}
+
 .sorting {
   max-width: 19.0rem;
   margin-left: auto;
@@ -1566,6 +1578,10 @@ select.form-control {
           align-items: center;
 }
 
+.mobile-btn {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   header .navbar-nav .nav-item .nav-link {
     padding-left: 1.5rem;
@@ -1585,7 +1601,18 @@ select.form-control {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 85px;
+    background-color: white;
+    width: 100%;
+    z-index: 999;
+    left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
   html {
     font-size: 52.50%;
   }
@@ -1598,6 +1625,7 @@ select.form-control {
   }
   .cta .wrap p {
     margin-bottom: 2rem;
+    text-align: center;
   }
   .blogs .card .content .read-more {
     -webkit-box-pack: start;
@@ -1606,6 +1634,38 @@ select.form-control {
   }
   .services .img-wrap img {
     margin-bottom: 3rem;
+  }
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section.fw {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mobile-btn {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .recent-projects .sec-heading {
+    text-align: center;
+  }
+  .mt-mobile {
+    margin-top: 6rem;
+  }
+  .about-features .misson {
+    margin-top: 4rem;
+  }
+  .products .card {
+    margin-bottom: 5rem;
+  }
+  .blogs .card {
+    margin-bottom: 6rem;
+  }
+  .contact iframe {
+    margin-bottom: 4rem;
   }
 }
 
@@ -1620,7 +1680,7 @@ select.form-control {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .col-xs-6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;

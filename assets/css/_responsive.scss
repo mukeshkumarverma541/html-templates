@@ -25,9 +25,18 @@
     }
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 85px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        z-index: 999;
+        left: 0px;
+    }
+}
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     html {
         font-size: 52.50%;
     }
@@ -37,6 +46,7 @@
             justify-content: center;
             p {
                 margin-bottom: 2rem;
+                text-align: center;
             }
         }
     }
@@ -48,6 +58,44 @@
             img {
                 margin-bottom: 3rem;
             }
+        }
+    }
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    section.fw {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mobile-btn {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .recent-projects {
+        .sec-heading {
+            text-align: center;
+        }
+    }
+    .mt-mobile {
+        margin-top: 6rem;
+    }
+    .about-features {
+        .misson {
+            margin-top: 4rem;
+        }
+    }
+    .products .card {
+        margin-bottom: 5rem;
+    }
+    .blogs .card {
+        margin-bottom: 6rem;
+    }
+    .contact {
+        iframe {
+            margin-bottom: 4rem;
         }
     }
 }
@@ -63,7 +111,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .col-xs-6 {
         flex: 0 0 auto;
         width: 50%;

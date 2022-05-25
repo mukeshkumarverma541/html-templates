@@ -45,6 +45,10 @@
         text-decoration: none;
     }
     
+    .container-fluid {
+        overflow-x: hidden;
+    }
+    
     .btn-secondary {
         font-size: 1.6rem;
         font-weight: 500;
@@ -762,8 +766,11 @@
     
     .teams {
         .card {
-            border: 0;
             margin-bottom: 5rem;
+            border: 1px solid #d3d3d3;
+            .content {
+                padding: 0 2rem 1rem;
+            }
             .image {
                 margin-bottom: 2rem;
             }
@@ -1154,6 +1161,9 @@
             font-weight: 600;
             font-size: 1.8rem;
         }
+        .widget {
+            margin-bottom: 1rem;
+        }
     }
     
     .sorting {
@@ -1352,6 +1362,10 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center
+    }
+    
+    .mobile-btn {
+        display: none;
     }
     
     @import "responsive";

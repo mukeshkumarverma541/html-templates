@@ -126,7 +126,7 @@
             </div>
         </nav>
     </header>
-    <section class="slider" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+    <section class="slider fw" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
         <div class="container-fluid p-0">
             <div class="row">
                 <div class="col">
@@ -409,13 +409,13 @@
         </div>
     </section>
 
-    <section class="recent-projects sec-sep pb-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+    <section class="recent-projects sec-sep fw pb-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="container-fluid p-0">
             <div class="row container mx-auto top-heading">
                 <div class="col-sm-6">
                     <h2 class="sec-heading">Recent Projects</h2>
                 </div>
-                <div class="col-sm-6 text-right">
+                <div class="col-sm-6 text-right hide-mobile">
                     <a href="projects.html" class="btn btn-primary">View All</a>
                 </div>
             </div>
@@ -485,6 +485,11 @@
                         </div>
                         <!-- <div class="swiper-pagination"></div> -->
                     </div>
+                </div>
+            </div>
+            <div class="row text-center mobile-btn my-5">
+                <div class="col">
+                    <a href="projects.html" class="btn btn-primary">View All</a>
                 </div>
             </div>
         </div>
@@ -591,44 +596,6 @@
         </div>
     </section>
 
-    <section class="our-partners sec-sep pt-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="swiper partnersSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="assets/images/1.png" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="assets/images/2.png" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="assets/images/3.png" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="assets/images/4.png" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="assets/images/1.png" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="swiper-pagination"></div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <section class="quick-contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
@@ -733,7 +700,7 @@
                                 <a href="#">Privacy Policy</a>
                             </li>
                             <li>
-                                <a href="#">FAQs</a>
+                                <a href="faqs.html">FAQs</a>
                             </li>
                             <li>
                                 <a href="#">Terms & Condition</a>
@@ -771,13 +738,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
         AOS.init({
             disable: 'mobile'
         });
-
-
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 4,
             spaceBetween: 0,
