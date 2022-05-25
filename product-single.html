@@ -168,7 +168,7 @@
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-5">
                     <!-- Swiper -->
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="assets/images/products/1.jpg" class="img-fluid" />
@@ -279,18 +279,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row inner  gx-5">
-                            <div class="col-md-5 border-right">
-                                <p> <i class="fa-solid fa-pen-to-square"></i> Get A Free In-Home Quote</p>
-                                <a href="#" class="btn btn-primary">Book An Appointment</a>
+                        <div class="row inner">
+                            <div class="col">
+                                <div class="flex-card">
+                                    <p> <i class="fa-solid fa-pen-to-square"></i> Get A Free In-Home Quote</p>
+                                    <a href="#" class="btn btn-primary">Book An Appointment</a>
+                                </div>
                             </div>
-                            <div class="col-md-7">
+                            <!-- <div class="col-md-7">
                                 <p> <i class="fa-solid fa-location-dot"></i> Find Your Nearest Store</p>
                                 <div class="postal">
                                     <input type="text" class="form-control" placeholder="Enter a Postcode ">
                                     <button type="submit" class="btn btn-primary">Find Store</button>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -359,7 +361,7 @@
             </div>
             <div class="row mt-4">
                 <!-- Swiper -->
-                <div class="swiper mySwiper product-slider">
+                <div class="swiper productSlider product-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#">
@@ -422,7 +424,7 @@
             </div>
             <div class="row mt-4">
                 <!-- Swiper -->
-                <div class="swiper mySwiper product-slider">
+                <div class="swiper productSlider product-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#">
@@ -619,13 +621,35 @@
         AOS.init({
             disable: 'mobile'
         });
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".productSlider", {
             slidesPerView: 6,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                991: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                }
+            }
         });
     </script>
 </body>

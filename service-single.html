@@ -168,7 +168,7 @@
                 <div class="col-lg-6">
                     <!-- Swiper -->
 
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div class="swiper proGallerySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="assets/images/products/s1.jpg" class="img-fluid" />
@@ -190,7 +190,7 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <div thumbsSlider="" class="swiper mySwiper">
+                    <div thumbsSlider="" class="swiper swiper-thumb proGallerySwiper mt-4">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="assets/images/products/s1.jpg" class="img-fluid" />
@@ -228,16 +228,16 @@
     <section class="pro-gallery sec-sep bg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <img src="assets/images/products/s1.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <img src="assets/images/products/s2.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <img src="assets/images/products/s3.jpg" class="img-fluid">
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
                     <img src="assets/images/products/s4.jpg" class="img-fluid">
                 </div>
             </div>
@@ -410,13 +410,31 @@
             disable: 'mobile'
         });
 
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".proGallerySwiper", {
             spaceBetween: 10,
             slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            }
         });
-        var swiper2 = new Swiper(".mySwiper2", {
+        var swiper2 = new Swiper(".proGallerySwiper2", {
             spaceBetween: 10,
             navigation: {
                 nextEl: ".swiper-button-next",

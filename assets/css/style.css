@@ -12,18 +12,18 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   font-size: 1.6rem;
-  line-height: 28px;
+  line-height: 2.8rem;
 }
 
 .btn-primary {
   background-color: var(--primary-color);
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
   border: 1px solid var(--primary-color);
   border-radius: 0;
-  padding: 9px 28px;
+  padding: .9rem 2.8rem;
   margin-bottom: 1rem;
 }
 
@@ -49,7 +49,7 @@ a {
 }
 
 .btn-secondary {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
   background-color: var(--primary-color);
   font-weight: 400;
@@ -67,7 +67,7 @@ a {
   height: 3px;
   width: 100px;
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto 3.0rem;
 }
 
 .line.left {
@@ -79,8 +79,8 @@ a {
 }
 
 .carousel-indicators button {
-  width: 10px !important;
-  height: 10px !important;
+  width: 1.0rem !important;
+  height: 1.0rem !important;
   border-radius: 50%;
 }
 
@@ -93,19 +93,33 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
 }
 
-.top-header .wrap a {
+.top-header a {
   color: #fff;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
-.top-header .wrap a:hover {
+.top-header a:hover {
   color: #fff;
+}
+
+.top-header .btn {
+  background-color: #ffffff;
+  padding: .4rem 1.5rem;
+  border-radius: 4px;
+  color: #d43d27;
+  font-weight: 500;
+}
+
+.top-header .right {
+  text-align: right;
+}
+
+.wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 header .navbar-brand img {
@@ -133,14 +147,24 @@ header .dropdown-menu {
   min-width: 15rem;
   padding: 2rem 1rem;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 4px 20px 0px #0000006b;
-          box-shadow: 1px 4px 20px 0px #0000006b;
+  -webkit-box-shadow: 1px 4px 2.0rem 0px #0000006b;
+          box-shadow: 1px 4px 2.0rem 0px #0000006b;
   border-bottom: 4px solid var(--primary-color);
 }
 
 header .dropdown-menu li a {
   font-size: 1.5rem;
-  padding: 5px 10px;
+  padding: .5rem 1.0rem;
+}
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  -webkit-box-shadow: -2px 4px 4px #00000012;
+          box-shadow: -2px 4px 4px #00000012;
 }
 
 .slider {
@@ -156,7 +180,7 @@ header .dropdown-menu li a {
 }
 
 .slider .carousel-item {
-  min-height: 800px;
+  min-height: 80rem;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -221,11 +245,11 @@ header .dropdown-menu li a {
 }
 
 .slider .carousel-control-prev {
-  left: -50px;
+  left: -5.0rem;
 }
 
 .slider .carousel-control-next {
-  right: -50px;
+  right: -5.0rem;
 }
 
 .sec-heading {
@@ -257,8 +281,8 @@ header .dropdown-menu li a {
 }
 
 .arrow-icon {
-  width: 50px;
-  height: 50px;
+  width: 5.0rem;
+  height: 5.0rem;
   border-radius: 50%;
   border: 1px solid #fff;
   display: -webkit-box;
@@ -275,7 +299,7 @@ header .dropdown-menu li a {
 }
 
 .arrow-icon img {
-  width: 20px;
+  width: 2.0rem;
 }
 
 .swiper-button-next:after,
@@ -284,11 +308,11 @@ header .dropdown-menu li a {
 }
 
 .swiper-button-next {
-  right: 30px;
+  right: 3.0rem;
 }
 
 .swiper-button-prev {
-  left: 30px;
+  left: 3.0rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -296,7 +320,7 @@ header .dropdown-menu li a {
 .our-services .card {
   border: 0;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 3.0rem;
   position: relative;
 }
 
@@ -314,7 +338,7 @@ header .dropdown-menu li a {
 
 .our-services .card .title {
   position: absolute;
-  bottom: 40px;
+  bottom: 4.0rem;
   z-index: 1;
   text-align: center;
   width: 100%;
@@ -358,7 +382,7 @@ header .dropdown-menu li a {
   bottom: 0;
   width: 100%;
   color: #fff;
-  padding: 20px 20px 30px 30px;
+  padding: 2.0rem 2.0rem 3.0rem 3.0rem;
 }
 
 .recent-projects .content h3 {
@@ -368,6 +392,11 @@ header .dropdown-menu li a {
 
 .recent-projects .content .category {
   text-transform: uppercase;
+  background-color: red;
+  display: inline-block;
+  padding: 1px 1.5rem;
+  margin-bottom: .4rem;
+  font-size: 1.4rem;
 }
 
 .cta {
@@ -411,8 +440,8 @@ header .dropdown-menu li a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 5px 10px;
-  font-size: 16px;
+  padding: .5rem 1.0rem;
+  font-size: 1.6rem;
   position: absolute;
   bottom: 0;
 }
@@ -434,14 +463,14 @@ header .dropdown-menu li a {
 
 .blogs .card .content .post-desc {
   color: #6d6d6d;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   margin-top: 2rem;
 }
 
 .blogs .card .content .post-date {
   font-style: italic;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 }
 
 .blogs .card .content .author a {
@@ -451,7 +480,7 @@ header .dropdown-menu li a {
 
 .blogs .card .content .read-more {
   color: #000;
-  font-size: 15px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   padding: 0;
   display: -webkit-box;
@@ -460,7 +489,7 @@ header .dropdown-menu li a {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  margin-top: 20px;
+  margin-top: 2.0rem;
   position: relative;
 }
 
@@ -468,7 +497,7 @@ header .dropdown-menu li a {
   content: '';
   position: absolute;
   bottom: -3px;
-  width: 83px;
+  width: 8.3rem;
   height: 2px;
   background-color: var(--primary-color);
 }
@@ -484,11 +513,11 @@ header .dropdown-menu li a {
 }
 
 .quick-contact .left {
-  margin-right: 20px;
+  margin-right: 2.0rem;
 }
 
 .quick-contact img {
-  max-width: 48px;
+  max-width: 4.8rem;
 }
 
 .quick-contact .wrap {
@@ -505,14 +534,14 @@ header .dropdown-menu li a {
   display: block;
   color: #80888A;
   letter-spacing: 2px;
-  line-height: 22px;
+  line-height: 2.2rem;
   font-weight: 400;
 }
 
 .quick-contact .wrap p,
 .quick-contact .wrap a {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
   padding: 0;
   color: #FFF;
   font-weight: 300;
@@ -521,14 +550,14 @@ header .dropdown-menu li a {
 }
 
 .about h4 {
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 2.0rem;
+  line-height: 3.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
 .about .content-wrap {
-  max-width: 500px;
+  max-width: 50rem;
 }
 
 .testimonial {
@@ -549,7 +578,7 @@ header .dropdown-menu li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 490px;
+  min-height: 49.0rem;
 }
 
 .testimonial::before {
@@ -567,15 +596,15 @@ header .dropdown-menu li a {
 .testimonial .wrap {
   position: relative;
   z-index: 10;
-  max-width: 900px;
+  max-width: 90.0rem;
   margin: auto;
 }
 
 .testimonial p {
   font-weight: 200;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #FFF;
-  line-height: 40px;
+  line-height: 4.0rem;
 }
 
 .testimonial .icon {
@@ -583,12 +612,12 @@ header .dropdown-menu li a {
 }
 
 .testimonial .icon img {
-  width: 32px;
+  width: 3.2rem;
 }
 
 .testimonial .name {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 300;
   margin: 6rem auto 0;
@@ -640,6 +669,13 @@ footer .menu li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 200;
+}
+
+footer .menu li a:hover {
+  color: var(--primary-color);
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 footer .title {
@@ -722,8 +758,8 @@ footer .copyright {
 .navbar-toggler .hamburger-toggle {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 5.0rem;
+  height: 5.0rem;
   z-index: 11;
   float: right;
 }
@@ -907,7 +943,7 @@ footer .copyright {
 }
 
 .about-features p {
-  max-width: 440px;
+  max-width: 44.0rem;
 }
 
 .row-spacing {
@@ -942,7 +978,7 @@ footer .copyright {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 1.0rem;
   color: var(--primary-color);
 }
 
@@ -952,8 +988,8 @@ footer .copyright {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 5px 10px;
-  font-size: 16px;
+  padding: .5rem 1.0rem;
+  font-size: 1.6rem;
   position: absolute;
   bottom: 0;
 }
@@ -966,7 +1002,7 @@ footer .copyright {
 }
 
 .blogs .card .read-btn {
-  font-size: 15px;
+  font-size: 1.5rem;
   padding: 0;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -980,7 +1016,7 @@ footer .copyright {
 }
 
 .sidebar {
-  max-width: 300px;
+  max-width: 30.0rem;
   margin: auto;
 }
 
@@ -998,18 +1034,18 @@ footer .copyright {
 }
 
 .sidebar .widget .search input {
-  height: 51px;
-  font-size: 14px;
+  height: 5.1rem;
+  font-size: 1.4rem;
 }
 
 .sidebar .widget .search .btn {
   background-color: var(--primary-color);
   color: #fff;
   border-radius: 0;
-  height: 51px;
+  height: 5.1rem;
   left: 2px;
-  font-size: 16px;
-  width: 53px;
+  font-size: 1.6rem;
+  width: 5.3rem;
 }
 
 .sidebar .widget .title {
@@ -1020,7 +1056,7 @@ footer .copyright {
 .sidebar .widget .title::before {
   content: '';
   position: absolute;
-  bottom: -12px;
+  bottom: -1.2rem;
   width: 21%;
   height: 2px;
   background-color: var(--primary-color);
@@ -1034,8 +1070,8 @@ footer .copyright {
 .sidebar .widget ul li {
   color: #000;
   text-transform: uppercase;
-  margin-bottom: 8px;
-  font-size: 14px;
+  margin-bottom: .8rem;
+  font-size: 1.4rem;
 }
 
 .sidebar .widget ul li a {
@@ -1061,7 +1097,7 @@ footer .copyright {
 
 .sidebar .widget .tags li a {
   border: 1px solid #000;
-  padding: 8px;
+  padding: .8rem;
   margin-right: 1rem;
   margin-bottom: 1rem !important;
 }
@@ -1087,7 +1123,7 @@ footer .copyright {
 
 .contact .card {
   border: 1px solid #d2d2d2;
-  padding: 20px 10px;
+  padding: 2.0rem 1.0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1099,12 +1135,12 @@ footer .copyright {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-bottom: 40px;
-  min-height: 210px;
+  margin-bottom: 4.0rem;
+  min-height: 21.0rem;
 }
 
 .contact .card img {
-  max-width: 35px;
+  max-width: 3.5rem;
   margin-bottom: 2rem;
 }
 
@@ -1127,12 +1163,12 @@ footer .copyright {
 
 .social-links li i {
   color: #ababab;
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .form-control {
-  padding: 13px;
-  font-size: 14px;
+  padding: 1.3rem;
+  font-size: 1.0rem;
   margin-bottom: 2.5rem;
 }
 
@@ -1148,13 +1184,13 @@ select.form-control {
 
 .faqs .accordion-button {
   background-color: transparent;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
-  padding: 20px;
+  padding: 2.0rem;
 }
 
 .faqs .accordion-body p {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .faqs .accordion-button:not(.collapsed) {
@@ -1176,7 +1212,7 @@ select.form-control {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  min-height: 231px;
+  min-height: 23.1rem;
 }
 
 .products .card .image .back-img {
@@ -1208,10 +1244,10 @@ select.form-control {
 .portfolio .filters ul li {
   list-style: none;
   display: inline-block;
-  padding: 20px 20px;
+  padding: 2.0rem 2.0rem;
   cursor: pointer;
   position: relative;
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 500;
 }
 
@@ -1220,14 +1256,14 @@ select.form-control {
 }
 
 .portfolio .filters ul li.active::after {
-  width: calc(100% - 40px);
+  width: calc(100% - 4.0rem);
   background-color: var(--primary-color);
 }
 
 .portfolio .filters ul li::after {
   content: "";
   display: block;
-  width: calc(0% - 40px);
+  width: calc(0% - 4.0rem);
   position: absolute;
   height: 2px;
   background: #333;
@@ -1236,7 +1272,7 @@ select.form-control {
 }
 
 .portfolio .filters ul li:hover:after {
-  width: calc(100% - 40px);
+  width: calc(100% - 4.0rem);
   -webkit-transition: width 350ms ease-out;
   transition: width 350ms ease-out;
 }
@@ -1256,11 +1292,11 @@ select.form-control {
 }
 
 .portfolio .filters-content .item {
-  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
 }
 
 .portfolio .filters-content .item .category {
-  font-size: 15px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--primary-color);
 }
@@ -1271,7 +1307,7 @@ select.form-control {
 }
 
 .portfolio .filters-content .item .heading {
-  font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 600;
 }
 
@@ -1291,17 +1327,17 @@ select.form-control {
 }
 
 .project-meta h2 {
-  font-size: 23px;
-  line-height: 32px;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
 }
 
 .project-meta .title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .sorting {
-  max-width: 190px;
+  max-width: 19.0rem;
   margin-left: auto;
 }
 
@@ -1314,8 +1350,8 @@ select.form-control {
 }
 
 .variants div {
-  width: 60px;
-  height: 60px;
+  width: 6.0rem;
+  height: 6.0rem;
   background-color: #fff;
   margin-right: 1rem;
   margin-bottom: 1.5rem;
@@ -1387,7 +1423,7 @@ select.form-control {
 }
 
 .checks-in .inner p {
-  min-height: 5.7rem;
+  margin-right: 2rem;
 }
 
 .checks-in .btn {
@@ -1405,13 +1441,13 @@ select.form-control {
 
 .checks-in .postal input {
   max-width: 16rem;
-  height: 35px;
+  height: 3.5rem;
 }
 
 .checks-in .postal button {
-  padding: 6px;
-  height: 35px;
-  margin-left: 10px;
+  padding: .6rem;
+  height: 3.5rem;
+  margin-left: 1.0rem;
 }
 
 .checks-in .border-right {
@@ -1446,10 +1482,10 @@ select.form-control {
 }
 
 .filter .title {
-  padding: 6px 9px;
+  padding: .6rem .9rem;
   background-color: #f3f5f6;
   color: #585858;
-  font-size: 16px;
+  font-size: 1.6rem;
   border-bottom: 1px solid #d0d0d0;
 }
 
@@ -1492,9 +1528,9 @@ select.form-control {
   position: absolute;
   background-image: url(https://cdn-icons-png.flaticon.com/512/860/860828.png);
   background-size: contain;
-  width: 10px;
-  height: 10px;
-  top: 8px;
+  width: 1.0rem;
+  height: 1.0rem;
+  top: .8rem;
   left: -7px;
 }
 
@@ -1504,7 +1540,88 @@ select.form-control {
 
 .our-products .swiper-slide .name {
   color: #000;
-  padding-top: 10px;
+  padding-top: 1.0rem;
   text-align: center;
+}
+
+.pro-gallery img {
+  margin-bottom: 3rem;
+}
+
+.flex-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  header .navbar-nav .nav-item .nav-link {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .slider .carousel-control-prev {
+    left: 0;
+  }
+  .slider .carousel-control-next {
+    right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 57.50%;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 52.50%;
+  }
+  .cta .wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cta .wrap p {
+    margin-bottom: 2rem;
+  }
+  .blogs .card .content .read-more {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .services .img-wrap img {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .top-header .right {
+    display: none;
+  }
+  .top-header .wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .col-xs-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
